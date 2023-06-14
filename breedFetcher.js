@@ -11,7 +11,7 @@ const fetchBreedDescription = function(breedName, callback) {
 
     //if search returns nothing
     if (data.length === 0) {
-      error = "No information found for that breed. Maybe it does not exist"
+      error = "No information found for that breed. Maybe it does not exist";
     } else {
       //fetch description from data
       desc = data[0].description;
@@ -19,7 +19,7 @@ const fetchBreedDescription = function(breedName, callback) {
 
     callback(error, desc);
   });
-}
+};
 
 module.exports = { fetchBreedDescription };
 
